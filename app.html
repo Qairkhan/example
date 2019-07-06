@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>piskel-clone</title>
+</head>
+
+<body>
+
+    <div class="app">
+
+        <div class="tools-container">
+
+            <ul class="main-tools">
+                <li class="pen" data-toggle="tooltip" title="текст подсказки" data-placement="right"></li>
+                <li class="eraser" data-toggle="tooltip" title="другой текст подсказки"></li>
+                <li class="mirror-pen"></li>
+                <li class="same-color-bucket"></li>
+                <li class="stroke"></li>
+                <li class="circle"></li>
+                <li class="rectangle"></li>
+                <li class="lighten"></li>
+                <li class="dithering"></li>
+                <li class="bucket"></li>
+                <li class="move"></li>
+                <li class="shape-selection"></li>
+                
+            </ul>
+            <div class="colors-container">
+
+                <input type="color" value="#000000" class="firstColor">
+                <input type="color" value="#ffffff" class="secondColor">
+
+            </div>
+        </div>
+        <div class="frames">
+            <div class="preview-list-scroller">
+                <ul class="preview-list">
+                </ul>
+                <button class="add-new-frame">+</button>
+            </div>
+        </div>
+
+        <div class="block-container">
+            <canvas class="helper-canvas hide-canvas" width="32" height="32">No canvas</canvas>
+            <canvas class="mainCanvas" width="32" height="32">No canvas</canvas>
+            <canvas class="layers-canvas" width="32" height="32">No canvas</canvas>
+            <canvas class="live-tools-canvas" width="32" height="32">No canvas</canvas>
+            <canvas class="skin-canvas" width="32" height="32">No canvas</canvas>
+
+        </div>
+      
+
+        <div class="preview">
+            <div class="preview-block">
+                <div class="img-preview-block">
+                    <p class="fps-value">1</p>
+                    <button class="full-screen">Full scr</button>
+                </div>
+            </div>
+            <input type="range" min="1" max="60" value="1" class="fps-range">
+            <div class="additional-tools">
+                <ul class="additional-tools main-tools">
+                    <li class="flip"></li>
+                    <li class="align"></li>
+                    <li class="rotate"></li>
+                    <li class="inverse"></li>
+                </ul>
+            </div>
+            <div class="scale-container">
+                <ul class="ul-scale-container">
+                    <li class="32-scale">32</li>
+                    <li class="64-scale">64</li>
+                    <li class="128-scale">128</li>
+                </ul>
+                <p class="canvas-size">[32х32]</p>
+                <p class="mouse-position">out</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="save">
+        <button class="gif-local-fs"> save gif</button>
+        <button class="apng-local-fs"> save apng</button>
+    </div>
+<script type="text/javascript" src="appbe516fe66053ab221a78.bundle.js?be516fe66053ab221a78"></script></body>
+
+</html>
